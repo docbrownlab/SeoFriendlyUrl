@@ -1,0 +1,10 @@
+.config-nav-block.docbrownlab-tab strong:before {
+    background: url(../images/logo-docbrownlab.png) no-repeat center;
+    background-size: contain;
+    content: '';
+    display: inline-block;
+    height: 24px;
+    margin-right: 12px;
+    vertical-align: middle;
+    width: 104px;
+}

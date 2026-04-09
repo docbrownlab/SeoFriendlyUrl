@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="docbrownlab" translate="label" sortOrder="600" class="docbrownlab-tab">
+            <label>DocbrownLab</label>
+        </tab>
+        <section id="docbrownlab_seofriendlyurl"
+                 translate="label"
+                 sortOrder="500"
+                 showInDefault="1"
+                 showInWebsite="1"
+                 showInStore="1">
+            <label>Friendly URL</label>
+            <tab>docbrownlab</tab>
+            <resource>DocBrownLab_SeoFriendlyUrl::config</resource>
+            <group id="general"
+                   translate="label"
+                   sortOrder="10"
+                   showInDefault="1"
+                   showInWebsite="1"
+                   showInStore="1">
+                <label>General Settings</label>
+                <field id="enabled"
+                       translate="label comment"
+                       type="select"
+                       sortOrder="10"
+                       showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label>Enable Module</label>
+                    <comment>When enabled, the module applies the conversion table before Magento generates the product slug.</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="mappings"
+                       translate="label comment"
+                       type="text"
+                       sortOrder="20"
+                       showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label>Conversion Table</label>
+                    <comment>Edit the characters used in product url_key normalization. Changes affect new generations and new product saves.</comment>
+                    <frontend_model>DocBrownLab\SeoFriendlyUrl\Block\Adminhtml\System\Config\Form\Field\Mappings</frontend_model>
+                    <backend_model>DocBrownLab\SeoFriendlyUrl\Model\Config\Backend\Mappings</backend_model>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

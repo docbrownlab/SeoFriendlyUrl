@@ -1,0 +1,8 @@
+DocBrownLab Seo Friendly URL
+
+Copyright (c) DocBrownLab.
+All rights reserved.
+
+This package is proprietary software and may only be used, copied,
+modified or distributed according to the commercial agreement that
+governs its use.
