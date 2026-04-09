@@ -10,7 +10,7 @@ The module adds a configurable conversion table in the Admin so the merchant can
 
 Current admin path:
 
-- `Stores > Configuration > Firjan > URL Amigavel`
+- `Stores > Configuration > DocBrownLab > URL Amigavel`
 
 Planned future path:
 
@@ -29,7 +29,7 @@ Planned future path:
 
 After installation, open:
 
-- `Stores > Configuration > Firjan > URL Amigavel`
+- `Stores > Configuration > DocBrownLab > URL Amigavel`
 
 Available settings:
 
